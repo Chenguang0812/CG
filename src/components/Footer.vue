@@ -84,7 +84,7 @@
 
           <div class="mt-8">
             <a
-              href="mailto:contact@cgstudio.com"
+              href="https://line.me/ti/p/_LL76cixSS"
               class="block text-center w-full py-3 border border-gray-700 rounded-lg text-gray-300 hover:border-red-600 hover:text-red-500 transition"
             >
               索取報價單
