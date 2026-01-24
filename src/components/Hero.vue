@@ -12,10 +12,10 @@
 
     <div class="relative z-20 text-center px-4 w-full">
       <h1 class="text-4xl md:text-7xl font-bold mb-6 tracking-tight">
-        用創意<span class="text-red-600">說故事</span>
+        我們大腦<span class="text-red-600">很抽象</span>
       </h1>
       <p class="text-lg md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto px-4">
-        專業剪輯・整合行銷・打敗RC
+        專業的不專業剪輯・整合行銷・打敗RC Studio
       </p>
       <div class="flex flex-col md:flex-row justify-center gap-4 px-8 md:px-0">
         <a

@@ -55,10 +55,10 @@ const founderImage = new URL("../assets/boss.jpg", import.meta.url).href;
             class="bg-gray-800/50 p-5 md:p-6 rounded-xl border border-gray-700 hover:border-red-500 transition duration-300"
           >
             <h3 class="text-lg md:text-xl font-bold text-white mb-2 flex items-center">
-              <span class="text-red-500 mr-2">⚡</span> 極致創作力
+              <span class="text-red-500 mr-2">💢 </span> 上廁所
             </h3>
             <p class="text-gray-400 text-sm">
-              不被傳統框架綑綁play，用媽媽生下的腦袋激發出蹦蹦炸彈。
+              工作的時候大概30分鐘上廁所一次，都是為了把不好的創意排泄，不是薪水小偷。
             </p>
           </div>
 
@@ -66,9 +66,11 @@ const founderImage = new URL("../assets/boss.jpg", import.meta.url).href;
             class="bg-gray-800/50 p-5 md:p-6 rounded-xl border border-gray-700 hover:border-red-500 transition duration-300"
           >
             <h3 class="text-lg md:text-xl font-bold text-white mb-2 flex items-center">
-              <span class="text-red-500 mr-2">💼</span> 超齡管理思維
+              <span class="text-red-500 mr-2">💢</span> 玩遊戲
             </h3>
-            <p class="text-gray-400 text-sm">我超屌。</p>
+            <p class="text-gray-400 text-sm">
+              工作到一半會去玩遊戲，這不是偷懶，而是體驗薪水小偷的感覺。
+            </p>
           </div>
         </div>
       </div>

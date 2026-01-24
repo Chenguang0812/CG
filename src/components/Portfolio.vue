@@ -11,6 +11,11 @@ const props = defineProps({
 // ▼▼▼ 這裡記得放你全部的作品連結 ▼▼▼
 const works = [
   {
+    title: "反骨男孩",
+    category: "綜藝",
+    link: "https://www.youtube.com/watch?v=v4eZ1pXI35k&pp=2AYF",
+  },
+  {
     title: "達達Car后",
     category: "綜藝",
     link: "https://youtu.be/rudywJXb3EU?si=gOrgKW3JyATKZXT9",
@@ -32,11 +37,6 @@ const works = [
     link: "https://youtu.be/MAmJrQY3M4s?si=ixHCMArRsK2KjyDn",
   },
   {
-    title: "禾園全屋訂制",
-    category: "商業影片",
-    link: "https://youtu.be/pVxR97fy0Gc?si=H6cYFEamVZmedhWd",
-  },
-  {
     title: "盧志遠",
     category: "Vlog",
     link: "https://youtu.be/eqXs_hMQbBY?si=9iWaUrlvb8SvkY64",
@@ -46,6 +46,42 @@ const works = [
     title: "晨光(老闆本闆)",
     category: "遊戲影片",
     link: "https://youtu.be/6OkP8vTQ4_E?si=VL8-x-d9shwXTMDi",
+  },
+  {
+    title: "傑克開吃",
+    category: "美食",
+    link: "https://youtu.be/Gc_81YVAawQ?si=LsZUrjCHGv95p3er",
+  },
+  {
+    title: "禾園全屋訂制",
+    category: "商業影片",
+    link: "https://youtu.be/pVxR97fy0Gc?si=H6cYFEamVZmedhWd",
+  },
+  {
+    title: "酷炫老師",
+    category: "綜藝",
+    link: "https://youtu.be/lapEGazUQqI?si=IqwhyyyDFlumoYMD",
+  },
+  {
+    title: "天母無聊怪",
+    category: "商業影片",
+    link: "https://youtu.be/XtaHghgmq94?si=YhhWoEv_KBe9hifJ",
+  },
+  {
+    title: "Dinner Lin",
+    category: "Vlog",
+    link: "https://youtu.be/sbAlLB9Z_68?si=OWUtBNCeAG3clq3b",
+  },
+  {
+    title: "我是蕾菈I'm Lyla",
+    category: "綜藝",
+    link: "https://youtu.be/m9vB9G0SnVc?si=ZWo5dVp-556hFdfP",
+  },
+  {
+    title: "沁柔的沁 Yuchinjou",
+    category: "綜藝",
+    link:
+      "https://www.youtube.com/watch?v=qxhTCOqch8c&list=PLd6uy9rEz5Xg3qXMt5dHFhxecletEqpRM&index=16",
   },
 ];
 
@@ -63,7 +99,7 @@ const getThumbnail = (url) => {
 
 const currentCategory = ref("全部");
 const selectedVideoId = ref(null);
-const categories = ["全部", "綜藝", "美食", "商業影片", "遊戲影片"];
+const categories = ["全部", "綜藝", "美食", "商業影片", "遊戲影片", "Vlog"];
 
 const filteredWorks = computed(() => {
   let result = works;

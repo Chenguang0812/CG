@@ -10,9 +10,8 @@ const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex-shrink-0 font-bold text-xl tracking-wider text-red-600">
-          CG STUDIO
+          <a href="/"> CG STUDIO </a>
         </div>
-
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-8">
             <a
