@@ -15,7 +15,7 @@
         我們大腦<span class="text-red-600">很抽象</span>
       </h1>
       <p class="text-lg md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto px-4">
-        專業的不專業剪輯・整合行銷・打敗RC Studio
+        專業的不專業剪輯・整合行銷・頂級創造力
       </p>
       <div class="flex flex-col md:flex-row justify-center gap-4 px-8 md:px-0">
         <a
