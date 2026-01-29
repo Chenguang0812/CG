@@ -83,6 +83,16 @@ const works = [
     link:
       "https://www.youtube.com/watch?v=qxhTCOqch8c&list=PLd6uy9rEz5Xg3qXMt5dHFhxecletEqpRM&index=16",
   },
+  {
+    title: "日本不動產 R-GROUP",
+    category: "商業影片",
+    link: "https://www.youtube.com/watch?v=HhifZqczyxs",
+  },
+  {
+    title: "日本不動產 R-GROUP",
+    category: "商業影片",
+    link: "https://youtu.be/CjfDUxh95ZI?si=2vSTxiUPtoEJ1CRY",
+  },
 ];
 
 const getYouTubeId = (url) => {
