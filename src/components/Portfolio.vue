@@ -32,6 +32,11 @@ const works = [
       "https://www.youtube.com/watch?v=XVlzWB1zJzk&list=PLd6uy9rEz5Xg3qXMt5dHFhxecletEqpRM&index=5",
   },
   {
+    title: "陳又榕波波蓁",
+    category: "Vlog",
+    link: "https://youtu.be/8Er381Kot6s",
+  },
+  {
     title: "大鈞",
     category: "Vlog",
     link: "https://youtu.be/u6FMHWCImLA?si=hT7M_gYHu1iJsUXq",
