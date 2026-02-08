@@ -98,6 +98,11 @@ const works = [
     category: "商業影片",
     link: "https://youtu.be/CjfDUxh95ZI?si=2vSTxiUPtoEJ1CRY",
   },
+  {
+    title: "陳又榕波波蓁",
+    category: "Vlog",
+    link: "https://youtu.be/8Er381Kot6s",
+  },
 ];
 
 const getYouTubeId = (url) => {
