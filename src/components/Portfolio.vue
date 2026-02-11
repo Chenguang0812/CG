@@ -16,11 +16,6 @@ const works = [
     link: "https://youtu.be/6N9PNBW5t3E?si=CMbVG9mcs6CrGrAt",
   },
   {
-    title: "反骨男孩",
-    category: "綜藝",
-    link: "https://www.youtube.com/watch?v=v4eZ1pXI35k&pp=2AYF",
-  },
-  {
     title: "達達Car后",
     category: "綜藝",
     link: "https://youtu.be/rudywJXb3EU?si=gOrgKW3JyATKZXT9",
@@ -68,11 +63,6 @@ const works = [
     link: "https://youtu.be/pVxR97fy0Gc?si=H6cYFEamVZmedhWd",
   },
   {
-    title: "酷炫老師",
-    category: "綜藝",
-    link: "https://youtu.be/lapEGazUQqI?si=IqwhyyyDFlumoYMD",
-  },
-  {
     title: "天母無聊怪",
     category: "商業影片",
     link: "https://youtu.be/XtaHghgmq94?si=YhhWoEv_KBe9hifJ",
@@ -81,17 +71,6 @@ const works = [
     title: "Dinner Lin",
     category: "Vlog",
     link: "https://youtu.be/sbAlLB9Z_68?si=OWUtBNCeAG3clq3b",
-  },
-  {
-    title: "我是蕾菈I'm Lyla",
-    category: "綜藝",
-    link: "https://youtu.be/m9vB9G0SnVc?si=ZWo5dVp-556hFdfP",
-  },
-  {
-    title: "沁柔的沁 Yuchinjou",
-    category: "綜藝",
-    link:
-      "https://www.youtube.com/watch?v=qxhTCOqch8c&list=PLd6uy9rEz5Xg3qXMt5dHFhxecletEqpRM&index=16",
   },
   {
     title: "日本不動產 R-GROUP",
