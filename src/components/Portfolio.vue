@@ -29,7 +29,7 @@ const works = [
   {
     title: "陳又榕波波蓁",
     category: "Vlog",
-    link: "https://youtu.be/8Er381Kot6s",
+    link: "https://www.youtube.com/watch?v=o1N-YhAyyZY&t=83s",
   },
   {
     title: "大鈞",
@@ -46,7 +46,6 @@ const works = [
     category: "Vlog",
     link: "https://youtu.be/eqXs_hMQbBY?si=9iWaUrlvb8SvkY64",
   },
-
   {
     title: "晨光(老闆本闆)",
     category: "遊戲影片",
@@ -65,7 +64,7 @@ const works = [
   {
     title: "天母無聊怪",
     category: "商業影片",
-    link: "https://youtu.be/XtaHghgmq94?si=YhhWoEv_KBe9hifJ",
+    link: "https://youtu.be/8DDHqIsPkYA",
   },
   {
     title: "Dinner Lin",
