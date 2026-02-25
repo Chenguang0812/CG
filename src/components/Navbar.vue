@@ -10,30 +10,34 @@ const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex-shrink-0 font-bold text-xl tracking-wider text-red-600">
-          <a href="/"> CG STUDIO </a>
+          <router-link to="/"> CG STUDIO </router-link>
         </div>
+
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-8">
-            <a
-              href="#home"
+            <router-link
+              to="/"
               class="hover:text-red-500 transition px-3 py-2 rounded-md text-sm font-medium"
-              >首頁</a
+              >首頁</router-link
             >
-            <a
-              href="#services"
+            <router-link
+              to="/#services"
               class="hover:text-red-500 transition px-3 py-2 rounded-md text-sm font-medium"
-              >服務項目</a
+              >服務項目</router-link
             >
-            <a
-              href="#portfolio"
+
+            <router-link
+              to="/works"
               class="hover:text-red-500 transition px-3 py-2 rounded-md text-sm font-medium"
-              >作品集</a
+              >所有作品</router-link
             >
-            <a
-              href="#contact"
+
+            <router-link
+              to="/contact"
               class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm transition"
-              >聯絡我們</a
             >
+              聯絡我們
+            </router-link>
           </div>
         </div>
 
@@ -79,29 +83,29 @@ const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
 
     <div v-show="isMenuOpen" class="md:hidden bg-black border-t border-gray-800">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
-        <a
-          href="#home"
+        <router-link
+          to="/"
           @click="isMenuOpen = false"
-          class="text-gray-300 hover:text-white hover:bg-gray-800 block px-3 py-3 rounded-md text-base font-medium"
-          >首頁</a
+          class="text-gray-300 hover:text-white block px-3 py-3 rounded-md text-base font-medium"
+          >首頁</router-link
         >
-        <a
-          href="#services"
+        <router-link
+          to="/#services"
           @click="isMenuOpen = false"
-          class="text-gray-300 hover:text-white hover:bg-gray-800 block px-3 py-3 rounded-md text-base font-medium"
-          >服務項目</a
+          class="text-gray-300 hover:text-white block px-3 py-3 rounded-md text-base font-medium"
+          >服務項目</router-link
         >
-        <a
-          href="#portfolio"
+        <router-link
+          to="/works"
           @click="isMenuOpen = false"
-          class="text-gray-300 hover:text-white hover:bg-gray-800 block px-3 py-3 rounded-md text-base font-medium"
-          >作品集</a
+          class="text-gray-300 hover:text-white block px-3 py-3 rounded-md text-base font-medium"
+          >所有作品</router-link
         >
-        <a
-          href="#contact"
+        <router-link
+          to="/contact"
           @click="isMenuOpen = false"
           class="text-red-500 font-bold block px-3 py-3 rounded-md text-base"
-          >聯絡我們</a
+          >聯絡我們</router-link
         >
       </div>
     </div>
