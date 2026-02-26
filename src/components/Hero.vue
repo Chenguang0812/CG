@@ -25,7 +25,7 @@
           查看作品
         </a>
         <a
-          href="#contact"
+          href="/contact"
           class="w-full md:w-auto bg-red-600 hover:bg-red-700 border border-red-600 px-8 py-3 rounded-full transition duration-300 text-center"
         >
           立即諮詢

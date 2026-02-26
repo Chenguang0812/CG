@@ -81,6 +81,11 @@ const works = [
     category: "商業影片",
     link: "https://youtu.be/CjfDUxh95ZI?si=2vSTxiUPtoEJ1CRY",
   },
+  {
+    title: "VC Talk",
+    category: "商業影片",
+    link: "https://youtu.be/Cwau6xEsspE?si=rNbnhJven4iy-6XV",
+  },
 ];
 
 const getYouTubeId = (url) => {
