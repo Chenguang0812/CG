@@ -86,6 +86,11 @@ const works = [
     category: "商業影片",
     link: "https://youtu.be/Cwau6xEsspE?si=rNbnhJven4iy-6XV",
   },
+  {
+    title: "晞晞嘻嘻",
+    category: "遊戲影片",
+    link: "https://youtu.be/KApfns-Ffgw?si=XHO5dRA1Vcvsl_o3",
+  },
 ];
 
 const getYouTubeId = (url) => {
