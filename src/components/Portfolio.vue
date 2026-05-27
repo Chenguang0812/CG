@@ -32,6 +32,11 @@ const works = [
     link: "https://www.youtube.com/watch?v=o1N-YhAyyZY&t=83s",
   },
   {
+    title: "黃小米Mii",
+    category: "Vlog",
+    link: "https://www.youtube.com/watch?v=GMeTXaiYNws",
+  },
+  {
     title: "大鈞",
     category: "Vlog",
     link: "https://youtu.be/u6FMHWCImLA?si=hT7M_gYHu1iJsUXq",
@@ -90,6 +95,26 @@ const works = [
     title: "晞晞嘻嘻",
     category: "遊戲影片",
     link: "https://youtu.be/KApfns-Ffgw?si=XHO5dRA1Vcvsl_o3",
+  },
+  {
+    title: "陳又榕波波蓁",
+    category: "Vlog",
+    link: "https://www.youtube.com/watch?v=syUnXsZMN3w&t=136s",
+  },
+  {
+    title: "嗨！營業中",
+    category: "綜藝",
+    link: "https://www.youtube.com/watch?v=iHWfAl-utSw&t=21s",
+  },
+  {
+    title: "嗨！營業中",
+    category: "綜藝",
+    link: "https://www.youtube.com/watch?v=q-gSvrWvomQ&t=337s",
+  },
+  {
+    title: "嗨！營業中",
+    category: "綜藝",
+    link: "https://www.youtube.com/watch?v=2hkgKjq6rBI&t=79s",
   },
 ];
 
