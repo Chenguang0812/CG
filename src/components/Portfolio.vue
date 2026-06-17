@@ -11,6 +11,11 @@ const props = defineProps({
 // ▼▼▼ 這裡記得放你全部的作品連結 ▼▼▼
 const works = [
   {
+    title: "反骨男孩",
+    category: "綜藝",
+    link: "https://youtu.be/v4eZ1pXI35k?si=NRsrJoqL-hpHh7kK",
+  },
+  {
     title: "嗨！營業中",
     category: "綜藝",
     link: "https://youtu.be/6N9PNBW5t3E?si=CMbVG9mcs6CrGrAt",
