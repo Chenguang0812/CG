@@ -44,10 +44,6 @@
           <ul
             class="space-y-3 md:space-y-4 text-gray-400 inline-block md:block text-left"
           >
-            <li class="flex items-start gap-3 justify-center md:justify-start">
-              <span class="text-red-600 mt-1">📍</span>
-              <span>台中市西屯區弘孝路45巷34號</span>
-            </li>
             <li class="flex items-center gap-3 justify-center md:justify-start">
               <span class="text-red-600">📧</span>
               <a href="mailto:roalxfreefire@gmail.com" class="hover:text-white transition"
