@@ -15,15 +15,16 @@ const works = [
     category: "綜藝",
     link: "https://youtu.be/v4eZ1pXI35k?si=NRsrJoqL-hpHh7kK",
   },
+
   {
     title: "嗨！營業中",
     category: "綜藝",
-    link: "https://youtu.be/6N9PNBW5t3E?si=CMbVG9mcs6CrGrAt",
+    link: "https://www.youtube.com/watch?v=TUEXM6F4sjY&t=106s",
   },
   {
-    title: "達達Car后",
-    category: "綜藝",
-    link: "https://youtu.be/rudywJXb3EU?si=gOrgKW3JyATKZXT9",
+    title: "Joan找好店",
+    category: "Vlog",
+    link: "https://youtu.be/jwlRuBu4yJg?si=MiCgysVfyeg6AX_F",
   },
   {
     title: "傑克開吃",
@@ -32,14 +33,19 @@ const works = [
       "https://www.youtube.com/watch?v=XVlzWB1zJzk&list=PLd6uy9rEz5Xg3qXMt5dHFhxecletEqpRM&index=5",
   },
   {
-    title: "陳又榕波波蓁",
-    category: "Vlog",
-    link: "https://www.youtube.com/watch?v=o1N-YhAyyZY&t=83s",
+    title: "雨廷的霆仔",
+    category: "綜藝",
+    link: "https://www.youtube.com/watch?v=Qe72umeMG68&t=224s",
   },
   {
     title: "黃小米Mii",
     category: "Vlog",
     link: "https://www.youtube.com/watch?v=GMeTXaiYNws",
+  },
+  {
+    title: "陳又榕波波蓁",
+    category: "Vlog",
+    link: "https://www.youtube.com/watch?v=o1N-YhAyyZY&t=83s",
   },
   {
     title: "大鈞",
@@ -120,6 +126,16 @@ const works = [
     title: "嗨！營業中",
     category: "綜藝",
     link: "https://www.youtube.com/watch?v=2hkgKjq6rBI&t=79s",
+  },
+  {
+    title: "達達Car后",
+    category: "綜藝",
+    link: "https://youtu.be/rudywJXb3EU?si=gOrgKW3JyATKZXT9",
+  },
+  {
+    title: "嗨！營業中",
+    category: "綜藝",
+    link: "https://youtu.be/6N9PNBW5t3E?si=CMbVG9mcs6CrGrAt",
   },
 ];
 
