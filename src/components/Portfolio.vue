@@ -33,6 +33,16 @@ const works = [
       "https://www.youtube.com/watch?v=XVlzWB1zJzk&list=PLd6uy9rEz5Xg3qXMt5dHFhxecletEqpRM&index=5",
   },
   {
+    title: "麻姑師太 - 阿民",
+    category: "綜藝",
+    link: "https://youtu.be/oIXsSxx9E68?si=F1PYXItyPq401UEx",
+  },
+  {
+    title: "KI笑人生",
+    category: "綜藝",
+    link: "https://youtu.be/UK-a1Nb8Riw?si=yEi9zRz73W1CTHsL",
+  },
+  {
     title: "雨廷的霆仔",
     category: "綜藝",
     link: "https://www.youtube.com/watch?v=Qe72umeMG68&t=224s",
