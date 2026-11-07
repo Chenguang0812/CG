@@ -55,7 +55,7 @@ const works = [
   {
     title: "尼克星",
     category: "遊戲影片",
-    link: "https://youtu.be/MAmJrQY3M4s?si=ixHCMArRsK2KjyDn",
+    link: "https://youtu.be/7lpH9F_e5iw?si=MHqI9cJVtGoS6jid",
   },
   {
     title: "盧志遠",
@@ -136,6 +136,21 @@ const works = [
     title: "嗨！營業中",
     category: "綜藝",
     link: "https://youtu.be/6N9PNBW5t3E?si=CMbVG9mcs6CrGrAt",
+  },
+  {
+    title: "尼克星",
+    category: "遊戲影片",
+    link: "https://www.youtube.com/watch?v=qo9CONwZAac&t=163s",
+  },
+  {
+    title: "WuWei無為",
+    category: "遊戲影片",
+    link: "https://youtu.be/0iDJ7agNpsc?si=i_ZR0wzE2onWLCu9",
+  },
+  {
+    title: "ROALX",
+    category: "遊戲影片",
+    link: "https://www.youtube.com/watch?v=Kg-DR-O_rP8&t=147s",
   },
 ];
 
