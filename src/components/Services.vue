@@ -1,48 +1,25 @@
 <script setup>
-// 變數直接定義在這裡，不需要 export default
-const services = [
-  {
-    title: "綜藝影片剪輯",
-    desc: "我們有著極高的想像力跟創造力，會給你們意想不到的Punchline。",
-    icon: "🎬",
-  },
-  {
-    title: "短影音製作",
-    desc: "身為一個充滿Punch的工作室，不用你說，我們也能抓住觀眾眼球。",
-    icon: "📱",
-  },
-  {
-    title: "YouTuber企劃",
-    desc: "從發想到腳本都幫你規劃，你就耍費就行。",
-    icon: "🎥",
-  },
-  {
-    title: "Youtuber經紀",
-    desc: "協助頻道發展，接洽工商跟規劃未來發展方向。",
-    icon: "📱",
-  },
-];
+import SectionHeading from "./SectionHeading.vue";
+import { services } from "../data/site.js";
 </script>
 
 <template>
-  <section id="services" class="py-16 md:py-20 bg-gray-900">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2
-        class="text-3xl font-bold text-center mb-12 md:mb-16 border-b border-gray-700 pb-4 inline-block text-white"
-      >
-        服務項目
-      </h2>
+  <section id="services" class="py-20 md:py-28 border-t border-stone/70">
+    <div class="container-site">
+      <SectionHeading eyebrow="01 — Services" title="服務項目" />
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-        <div
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-stone">
+        <article
           v-for="(service, index) in services"
-          :key="index"
-          class="bg-gray-800 p-6 md:p-8 rounded-xl hover:-translate-y-2 transition duration-300 border border-gray-700 hover:border-red-600"
+          :key="service.title"
+          class="py-8 sm:px-6 border-b border-stone lg:border-b-0 sm:[&:nth-child(odd)]:border-r sm:[&:nth-child(odd)]:pl-0 lg:[&:not(:last-child)]:border-r lg:pl-6 lg:first:pl-0"
+          data-aos="fade-up"
+          :data-aos-delay="index * 80"
         >
-          <div class="text-4xl mb-4">{{ service.icon }}</div>
-          <h3 class="text-xl font-bold mb-2 text-white">{{ service.title }}</h3>
-          <p class="text-gray-400 text-sm leading-relaxed">{{ service.desc }}</p>
-        </div>
+          <span class="font-serif italic text-ash">{{ String(index + 1).padStart(2, "0") }}</span>
+          <h3 class="font-serif text-xl mt-6 mb-3">{{ service.title }}</h3>
+          <p class="text-sm text-ash leading-relaxed">{{ service.desc }}</p>
+        </article>
       </div>
     </div>
   </section>

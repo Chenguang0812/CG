@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-// 引入兩個頁面檔案
+// 引入頁面檔案
 import HomeView from '../views/HomeView.vue'
 import WorksView from '../views/WorksView.vue'
 import ContactView from '../views/Contactview.vue'
@@ -26,7 +26,8 @@ const router = createRouter({
     // 讓換頁時自動滾動到最上面
     scrollBehavior(to, from, savedPosition) {
         if (to.hash) {
-            return { el: to.hash, behavior: 'smooth' }
+            // top: 預留固定導覽列的高度，避免標題被擋住
+            return { el: to.hash, top: 72, behavior: 'smooth' }
         }
         return { top: 0 }
     }

@@ -2,8 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 這裡可以放你之後想加的自定義樣式 */
-body {
-  background-color: #0f172a; /* 深色背景防止閃爍 */
-  color: white;
+@layer base {
+  html {
+    /* 錨點跳轉時預留固定導覽列的高度 */
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-parchment text-ink font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-ink text-parchment;
+  }
+}
+
+@layer components {
+  /* 區塊外框：統一寬度與左右留白 */
+  .container-site {
+    @apply max-w-site mx-auto px-6;
+  }
+
+  /* 小標籤，例如 01 / SERVICES */
+  .eyebrow {
+    @apply font-serif italic text-sm text-ash tracking-wide;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded px-6 py-3 text-sm tracking-wide transition-colors duration-300;
+  }
+  .btn-primary {
+    @apply btn bg-ink text-parchment hover:bg-ink/85;
+  }
+  .btn-secondary {
+    @apply btn bg-linen text-ink hover:bg-stone/70;
+  }
+  .btn-ghost {
+    @apply btn border border-stone text-ink hover:border-ink;
+  }
+
+  .field {
+    @apply w-full rounded border border-stone bg-parchment px-4 py-3 text-ink placeholder-ash/60 outline-none transition-colors focus:border-ink;
+  }
+  .field-label {
+    @apply block mb-2 text-xs tracking-widest text-ash;
+  }
+}
+
+@layer utilities {
+  /* 橫向滑動時隱藏捲軸 */
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }

@@ -1,112 +1,64 @@
 <script setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
+import { useRoute } from "vue-router";
+
+const links = [
+  { to: "/", label: "首頁" },
+  { to: "/#services", label: "服務項目" },
+  { to: "/works", label: "所有作品" },
+];
 
 const isMenuOpen = ref(false);
-const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
+const route = useRoute();
+
+// 換頁時自動收起手機選單
+watch(() => route.fullPath, () => (isMenuOpen.value = false));
 </script>
 
 <template>
-  <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <div class="flex-shrink-0 font-bold text-xl tracking-wider text-red-600">
-          <router-link to="/"> CG STUDIO </router-link>
-        </div>
+  <nav class="fixed top-0 w-full z-40 bg-parchment/90 backdrop-blur border-b border-stone/70">
+    <div class="container-site flex items-center justify-between h-16">
+      <router-link to="/" class="font-serif text-xl tracking-tight">
+        晨光工作室<span class="text-ember">.</span>
+      </router-link>
 
-        <div class="hidden md:block">
-          <div class="ml-10 flex items-baseline space-x-8">
-            <router-link
-              to="/"
-              class="hover:text-red-500 transition px-3 py-2 rounded-md text-sm font-medium"
-              >首頁</router-link
-            >
-            <router-link
-              to="/#services"
-              class="hover:text-red-500 transition px-3 py-2 rounded-md text-sm font-medium"
-              >服務項目</router-link
-            >
-
-            <router-link
-              to="/works"
-              class="hover:text-red-500 transition px-3 py-2 rounded-md text-sm font-medium"
-              >所有作品</router-link
-            >
-
-            <router-link
-              to="/contact"
-              class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm transition"
-            >
-              聯絡我們
-            </router-link>
-          </div>
-        </div>
-
-        <div class="-mr-2 flex md:hidden">
-          <button
-            @click="toggleMenu"
-            type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              v-if="!isMenuOpen"
-              class="block h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-            <svg
-              v-else
-              class="block h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-        </div>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <router-link
+          v-for="link in links"
+          :key="link.to"
+          :to="link.to"
+          class="text-ink/70 hover:text-ink transition-colors"
+        >
+          {{ link.label }}
+        </router-link>
+        <router-link to="/contact" class="btn-primary !px-4 !py-2">聯絡我們</router-link>
       </div>
+
+      <button
+        type="button"
+        class="md:hidden p-2 -mr-2 text-ink"
+        :aria-expanded="isMenuOpen"
+        aria-label="開啟選單"
+        @click="isMenuOpen = !isMenuOpen"
+      >
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path v-if="!isMenuOpen" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+          <path v-else stroke-linecap="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
 
-    <div v-show="isMenuOpen" class="md:hidden bg-black border-t border-gray-800">
-      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+    <div v-show="isMenuOpen" class="md:hidden border-t border-stone/70 bg-parchment">
+      <div class="container-site py-4 flex flex-col">
         <router-link
-          to="/"
-          @click="isMenuOpen = false"
-          class="text-gray-300 hover:text-white block px-3 py-3 rounded-md text-base font-medium"
-          >首頁</router-link
+          v-for="link in links"
+          :key="link.to"
+          :to="link.to"
+          class="py-3 border-b border-stone/50 text-ink/80"
         >
-        <router-link
-          to="/#services"
-          @click="isMenuOpen = false"
-          class="text-gray-300 hover:text-white block px-3 py-3 rounded-md text-base font-medium"
-          >服務項目</router-link
-        >
-        <router-link
-          to="/works"
-          @click="isMenuOpen = false"
-          class="text-gray-300 hover:text-white block px-3 py-3 rounded-md text-base font-medium"
-          >所有作品</router-link
-        >
-        <router-link
-          to="/contact"
-          @click="isMenuOpen = false"
-          class="text-red-500 font-bold block px-3 py-3 rounded-md text-base"
-          >聯絡我們</router-link
-        >
+          {{ link.label }}
+        </router-link>
+        <router-link to="/contact" class="btn-primary mt-4">聯絡我們</router-link>
       </div>
     </div>
   </nav>

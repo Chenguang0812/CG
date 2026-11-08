@@ -3,7 +3,7 @@ import Contact from "../components/Contact.vue";
 </script>
 
 <template>
-  <main class="min-h-screen bg-black pt-16">
+  <main>
     <Contact />
   </main>
 </template>
