@@ -21,6 +21,11 @@ const router = createRouter({
             path: '/contact', // 新增專屬的聯絡我們網址
             name: 'contact',
             component: ContactView
+        },
+        {
+            path: '/ai-tools', // 隱藏頁面：不放在任何導覽，只能直接輸入網址
+            name: 'ai-tools',
+            component: () => import('../views/AiToolsView.vue')
         }
     ],
     // 讓換頁時自動滾動到最上面

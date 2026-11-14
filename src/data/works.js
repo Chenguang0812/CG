@@ -1,16 +1,3 @@
-/**
- * 作品清單 —— 新增作品只要改這個檔案
- *
- * 新作品請加在「最上面」，網站會依照這裡的順序排列。
- *
- *   title     作品名稱（必填）
- *   category  分類（必填）。寫一個新分類，篩選按鈕就會自動出現
- *   link      YouTube 網址（必填）。縮圖會自動抓，不用另外準備
- *   featured  設成 true 會出現在首頁「精選作品」（選填）
- *
- * 範例：
- *   { title: "新作品", category: "綜藝", link: "https://youtu.be/xxxxxxxxxxx", featured: true },
- */
 export const works = [
   { title: "反骨男孩", category: "綜藝", link: "https://youtu.be/v4eZ1pXI35k" },
   { title: "嗨！營業中", category: "綜藝", link: "https://www.youtube.com/watch?v=TUEXM6F4sjY&t=106s" },
