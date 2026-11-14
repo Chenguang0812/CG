@@ -95,9 +95,12 @@ onMounted(() => {
   robotsMeta.name = "robots";
   robotsMeta.content = "noindex, nofollow";
   document.head.appendChild(robotsMeta);
+  // 底部固定 bar 會蓋住頁尾，這頁期間在 body 底部留出空間
+  document.body.style.paddingBottom = "80px";
 });
 onUnmounted(() => {
   robotsMeta?.remove();
+  document.body.style.paddingBottom = "";
   clearTimeout(toastTimer);
 });
 </script>
@@ -176,14 +179,20 @@ onUnmounted(() => {
             <span>{{ item }}</span>
           </li>
         </ul>
-
-        <p class="mt-12 text-sm text-parchment/60">課程開放時第一個通知你</p>
-        <div class="mt-4 flex flex-wrap gap-3">
-          <a class="btn bg-parchment text-ink hover:bg-parchment/85" href="https://lin.ee/q7qXg7o" target="_blank" rel="noopener">加 LINE</a>
-          <a class="btn border border-parchment/40 text-parchment hover:border-parchment" href="https://forms.gle/dGDMouQUPaUvXAeq8" target="_blank" rel="noopener">填 1 分鐘問卷</a>
-        </div>
       </div>
     </section>
+
+    <!-- 固定在底部的 LINE ＋ 問卷 -->
+    <nav
+      class="fixed inset-x-0 bottom-0 z-40 bg-parchment/90 backdrop-blur border-t border-stone/70 pb-[env(safe-area-inset-bottom)]"
+      aria-label="加 LINE 與填問卷"
+    >
+      <div class="container-site max-w-3xl flex items-center gap-3 py-3">
+        <span class="hidden sm:block flex-1 text-sm text-ash">課程開放時第一個通知你</span>
+        <a class="btn-primary flex-1 sm:flex-none" href="https://lin.ee/q7qXg7o" target="_blank" rel="noopener">加 LINE</a>
+        <a class="btn-ghost flex-1 sm:flex-none" href="https://forms.gle/dGDMouQUPaUvXAeq8" target="_blank" rel="noopener">填 1 分鐘問卷</a>
+      </div>
+    </nav>
 
     <Transition
       enter-active-class="transition-opacity duration-200"
@@ -195,7 +204,7 @@ onUnmounted(() => {
         v-if="toast"
         role="status"
         aria-live="polite"
-        class="fixed left-1/2 bottom-8 -translate-x-1/2 z-50 bg-ink text-parchment text-sm px-5 py-3 rounded"
+        class="fixed left-1/2 bottom-24 -translate-x-1/2 z-50 bg-ink text-parchment text-sm px-5 py-3 rounded"
       >
         {{ toast }}
       </div>
